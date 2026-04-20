@@ -1,13 +1,11 @@
 package com.portgyu.portfolio
 
-import org.springframework.boot.autoconfigure.AutoConfiguration
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
 import org.springframework.boot.runApplication
 
-@SpringBootApplication(exclude = [SecurityAutoConfiguration::class])
+@SpringBootApplication
 class PortfolioApplication
 
 fun main(args: Array<String>) {
-	runApplication<PortfolioApplication>(*args)
+    runApplication<PortfolioApplication>(*args)
 }
